@@ -52,6 +52,23 @@
 <footer class="site-footer">
     <p>© 2025 Smile for Sache · Girls Club. Internal use only (demo).</p>
 </footer>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const button = document.querySelector('.login-form button');
+  const userInput = document.querySelector('.login-form input[type="text"]');
+  const passInput = document.querySelector('.login-form input[type="password"]');
 
+  button.addEventListener('click', function() {
+    const username = userInput.value.trim();
+    const password = passInput.value.trim();
+
+    if (username === 'demo' && password === 'password') {
+      alert('Demo login successful! (This is just a visual example, not a real secure login.)');
+    } else {
+      alert('Demo only — use username: demo and password: password');
+    }
+  });
+});
+</script>
 </body>
 </html>
