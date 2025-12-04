@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Staff Login · Smile for Sache Girls Club</title>
+    <title>Staff Portal · Smile for Sache Girls Club</title>
     <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -13,45 +13,98 @@
         <a href="index.html" class="nav-brand">
             <img src="logo-text.png" alt="Smile for Sache Logo" class="nav-logo" />
         </a>
+        <nav class="nav-links">
+            <a href="index.html#mission">Mission</a>
+            <a href="index.html#programs">Programs</a>
+            <a href="index.html#get-involved">Get Involved</a>
+            <a href="staff.html">Staff Portal</a>
+        </nav>
     </div>
 </header>
 
 <main class="staff-main">
-    <section class="section">
+    <section class="section soft">
         <div class="section-header">
-            <p class="eyebrow">Staff Only </p>
-            <h2>Employee & Volunteer Login</h2>
+            <p class="eyebrow">Internal</p>
+            <h2>Smile for Sache Girls Club · Staff Portal (Demo)</h2>
         </div>
 
         <div class="login-card">
             <p class="login-note">
-                
+                This is a <strong>demo</strong> staff login screen to show what our internal
+                portal could look like. Real youth and family information will always be
+                stored safely in secure tools (Google Drive, Forms, Airtable, etc.), not on
+                this public website.
             </p>
 
             <form class="login-form">
                 <label>
-                    Username
-                    <input type="text" placeholder="Enter your username" />
+                    Staff email
+                    <input type="text" placeholder="name@sachegirlsclub.org" />
                 </label>
 
                 <label>
-                    Password
+                    Staff password
                     <input type="password" placeholder="Enter your password" />
                 </label>
 
                 <button type="button" class="btn primary">
-                    Log In
+                    Log in to demo
                 </button>
             </form>
 
+            <p class="login-note" style="font-size: 0.8rem; text-align:center;">
+                Demo login only – use <strong>demo</strong> as the email and
+                <strong>password</strong> as the password to see a sample message.
+            </p>
+        </div>
+    </section>
 
+    <section class="section">
+        <div class="section-header">
+            <p class="eyebrow">Roles</p>
+            <h2>Staff Roles · Demo Dashboards</h2>
+        </div>
+        <div class="card-grid">
+            <article class="info-card">
+                <h3>Program Coordinator</h3>
+                <p>
+                    Full internal view of Girls Club operations: contacts, attendance,
+                    budget tracking, surveys, and funding materials.
+                </p>
+                <a href="coordinator-dashboard.html" class="btn ghost">View demo dashboard</a>
+            </article>
+            <article class="info-card">
+                <h3>Program Facilitator</h3>
+                <p>
+                    Access to program plans and the information needed to run safe,
+                    youth-centered sessions.
+                </p>
+                <a href="facilitator-dashboard.html" class="btn ghost">View demo dashboard</a>
+            </article>
+            <article class="info-card">
+                <h3>Volunteer</h3>
+                <p>
+                    Overview of upcoming shifts, program highlights, and how to best
+                    support girls during activities.
+                </p>
+                <a href="volunteer-dashboard.html" class="btn ghost">View demo dashboard</a>
+            </article>
+            <article class="info-card">
+                <h3>Data & Privacy</h3>
+                <p>
+                    Youth and family information is never stored on this public site.
+                    All sensitive data is kept in secure, access-controlled tools.
+                </p>
+            </article>
         </div>
     </section>
 </main>
 
 <footer class="site-footer">
-    <p>© 2025 Smile for Sache · Girls Club. Internal use only (demo).</p>
+    <p>© 2025 Smile for Sache · Girls Club. Staff portal demo.</p>
 </footer>
+
 <script>
 document.addEventListener('DOMContentLoaded', function() {
   const button = document.querySelector('.login-form button');
@@ -63,12 +116,13 @@ document.addEventListener('DOMContentLoaded', function() {
     const password = passInput.value.trim();
 
     if (username === 'demo' && password === 'password') {
-      alert('Demo login successful! (This is just a visual example, not a real secure login.)');
+      alert('Demo login successful! In a real portal, you would now see your personalized dashboard.');
     } else {
-      alert('Demo only — use username: demo and password: password');
+      alert('Demo only — use email: demo and password: password to see the example message.');
     }
   });
 });
 </script>
+
 </body>
 </html>
