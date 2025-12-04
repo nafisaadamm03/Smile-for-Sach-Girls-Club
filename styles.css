@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background: #fff;
+}
+
+/* HEADER */
+header {
+    background: #ffd6ea;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-logo {
+    width: 300px;
+    max-width: 80%;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+nav a {
+    margin: 0 10px;
+    color: #e75480;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* HERO SECTION */
+#hero {
+    background: #ffe3f1;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-logo {
+    width: 220px;
+    max-width: 70%;
+    margin-bottom: 20px;
+}
+
+/* GENERAL SECTION STYLES */
+section {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+h2 {
+    color: #e75480;
+    text-align: center;
+}
+
+/* CONTACT BUTTON */
+.contact-button {
+    display: inline-block;
+    padding: 10px 25px;
+    background: #e75480;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/* FOOTER */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* MOBILE FRIENDLY */
+@media (max-width: 600px) {
+    nav a {
+        display: block;
+        margin: 8px 0;
+    }
+
+    .header-logo {
+        width: 230px;
+    }
+
+    .hero-logo {
+        width: 170px;
+    }
+}
